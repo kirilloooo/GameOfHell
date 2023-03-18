@@ -1,0 +1,41 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom"
+		android:orientation="vertical"
+		android:layout_gravity="bottom">
+		<androidx.viewpager.widget.ViewPager
+			android:id="@+id/viewpager1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:layout_weight="1" />
+		<meow.bottomnavigation.MeowBottomNavigation
+			android:id="@+id/btmNav"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="bottom"
+			android:orientation="horizontal"
+			android:layout_gravity="bottom"
+			app:mbn_circleColor="#ffffff"
+			app:mbn_backgroundBottomColor="#ffffff"
+			app:mbn_countBackgroundColor="#ff6f00"
+			app:mbn_countTextColor="#ffffff"
+			app:mbn_defaultIconColor="#90a4ae"
+			app:mbn_countTypeface="fonts/droidsansmono.ttf"
+			
+			app:mbn_rippleColor="#2f424242"
+			app:mbn_selectedIconColor="#3c415e"
+			app:mbn_shadowColor="#1f212121"
+			
+			android:layout_alignParentBottom="true" />
+	</LinearLayout>
+</LinearLayout>
